@@ -1,0 +1,29 @@
+<div class="metrics-view">
+
+	<div class="widget">
+		<div class="widget-heading">
+		
+		<span style="float:left;margin-top:-10px">Top 5 Trending Interfaces</span>
+		<span style="float:right;margin-top:-10px">Top 5 Low Performing Interfaces</span>
+		<span style="clear:both"></span>
+		</div>
+		<div class="widget-body" ng-click="metricsView.showDetail()" >
+			<div class="row">
+				<div class="col-md-6">
+					<chartist class="ct-chart ct-octave dash-chart-alt"
+						chartist-chart-type="Bar"
+						chartist-data="metricsView.metricsChartData"
+						chartist-chart-options="metricsView.metricsChartOptions">
+					</chartist>
+				</div>
+				<div class="col-md-6">
+					<chartist class="ct-chart ct-octave dash-chart-alt"
+						chartist-chart-type="Line"
+						chartist-data="metricsView.metricsChartDataLow"
+						chartist-chart-options="metricsView.metricsChartOptionsLow">
+					</chartist>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

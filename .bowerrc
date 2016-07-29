@@ -1,0 +1,6 @@
+{
+  "strict-ssl": false,
+  "registry": "http://bower.herokuapp.com",
+  "proxy":"http://proxy.ebiz.verizon.com/",
+  "https-proxy":"http://proxy.ebiz.verizon.com/"
+}

@@ -1,0 +1,71 @@
+{
+   "result":[
+     {
+			"serviceName" : "E2Ei",
+			"methodName" : "getGCHProfiles",
+			"methodType" : "REST",
+			"interfaceType" : "INTERNAL",
+			"status" : "SUCCESS",
+			"env" : "QA1",
+			"client" : "GCH",
+			"count" : "50",
+			"id" : "56b905b29f034b44104d95af",
+			"collectorItemId" : "56b905b29f034b44104d95ae",
+			"duration" : "43s",
+			"timestamp" : "07/13/2016"
+		}, {
+			"serviceName" : "E2Ei",
+			"methodName" : "getCLINList",
+			"methodType" : "REST",
+			"interfaceType" : "EXTERNAL",
+			"status" : "SUCCESS",
+			"env" : "QA1",
+			"client" : "VECRM",
+			"count" : "40",
+			"id" : "56b905b29f034b44104d95af",
+			"collectorItemId" : "56b905b29f034b44104d95ae",
+			"duration" : "343s",
+			"timestamp" : "07/13/2016"
+		}, {
+			"serviceName" : "E2Ei",
+			"methodName" : "getGCHProfileDetails",
+			"methodType" : "REST",
+			"interfaceType" : "EXTERNAL",
+			"status" : "SUCCESS",
+			"env" : "QA1",
+			"client" : "PQ",
+			"count" : "30",
+			"id" : "56b905b29f034b44104d95af",
+			"collectorItemId" : "56b905b29f034b44104d95ae",
+			"duration" : "33s",
+			"timestamp" : "07/13/2016"
+		}, {
+			"serviceName" : "E2Ei",
+			"methodName" : "getGCHProfileDetails",
+			"methodType" : "REST",
+			"interfaceType" : "EXTERNAL",
+			"status" : "SUCCESS",
+			"env" : "QA1",
+			"client" : "PQ",
+			"count" : "20",
+			"id" : "56b905b29f034b44104d95af",
+			"collectorItemId" : "56b905b29f034b44104d95ae",
+			"duration" : "33s",
+			"timestamp" : "07/13/2016"
+		}, {
+			"serviceName" : "E2Ei",
+			"methodName" : "getGCHProfileDetails",
+			"methodType" : "REST",
+			"interfaceType" : "INTERNAL",
+			"status" : "SUCCESS",
+			"env" : "QA1",
+			"client" : "GCH",
+			"count" : "10",
+			"id" : "56b905b29f034b44104d95af",
+			"collectorItemId" : "56b905b29f034b44104d95ae",
+			"duration" : "4s",
+			"timestamp" : "07/13/2016"
+		}
+   ],
+   "lastUpdated":1454966312933
+}

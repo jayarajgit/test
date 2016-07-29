@@ -1,0 +1,37 @@
+<widget-modal widget-modal-close="true" widget-modal-title="Usage Metrics Collector">
+<div class="widget-detail metrics-detail" style="padding: 5px;">
+	<div class="widget-detail-body">
+		<table class="table">
+			<tr colspan=2>
+				<td><b>{{metricsDetail.title}}</td>
+				</b>
+			</tr>
+			<tr>
+				<td>Environment</td>
+				<td><b>{{metricsDetail.env}}</b></td>
+			</tr>
+			<tr>
+				<td>Total No.of Transactions</td>
+				<td><b>{{metricsDetail.totalNoTrans}}</b></td>
+			</tr>
+		</table>
+		<table ng-table="metricsDetail.metricsTable" class="table"
+			show-filter="true">
+			<tr ng-repeat="record in data">
+				<td title="'S No'">{{$index + 1}}</td>
+				<td title="'Service Name'" filter="{ serviceName: 'text'}">{{record.serviceName}}</td>
+				<td title="'Method Name'" filter="{ methodName: 'text'}">{{record.methodName}}</td>
+				<td title="'Count'" filter="{ count: 'text'}">{{record.count}}</td>
+				<td title="'Status'" filter="{status: 'text'}">{{record.status}}</td>
+				<td title="'client'" filter="{ client: 'text'}">{{record.client}}</td>
+				<td title="'methodType'" filter="{ methodType: 'text'}">{{record.methodType}}</td>
+				<td title="'interfaceType'" filter="{ interfaceType: 'text'}">{{record.interfaceType}}</td>
+				<td title="'Average Time'">{{record.avgExecutionTime}}</td>
+				<td title="'Min Time'">{{record.minExecutionTime}}</td>
+				<td title="'Max Time'">{{record.maxExecutionTime}}</td>
+				<td title="'Date'">{{record.date}}</td>
+			</tr>
+		</table>
+	</div>
+</div>
+</widget-modal>

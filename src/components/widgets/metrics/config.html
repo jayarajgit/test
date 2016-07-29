@@ -1,0 +1,23 @@
+<widget-modal widget-modal-title="Configure Metrics Widget">
+<form name="configForm"
+ng-submit="metricsConfig.submit(configForm.$valid,metricsConfig.envOption)"
+ novalidate="novalidate">
+	<form-group input="metricsOption"
+				class="text-center"
+				errors="{required:'Please Select environment'}">
+		<label class="modal-label">Select environment</label>
+
+		<select name="metricsOption"
+				class="form-control text-center"
+				ng-model="metricsConfig.envOption"
+				ng-options="envOption.value for envOption in metricsConfig.envOptions"
+				required>
+			<option value="" disabled>Select environment</option>
+		</select>
+	</form-group>
+
+	<div class="button-row row text-center">
+		<button type="submit" class="btn btn-primary btn-wide">Save</button>
+	</div>
+</form>
+</widget-modal>
