@@ -1,0 +1,13 @@
+C:\Program Files\MongoDB\Server\3.2\bin\mongod.exe --dbpath "D:\mongodata"
+
+C:\Program Files\MongoDB\Server\3.2\bin\mongod.exe
+
+use dashboardb
+db.createUser(
+        {
+          user: "gchuser",
+          pwd: "gchuser1",
+          roles: [
+             {role: "readWrite", db: "dashboardb"}
+                  ]
+          })
